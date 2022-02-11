@@ -8,7 +8,7 @@ var capacitorGalleryVideoPickerPlugin = (function (exports, core) {
     })(exports.PickerVideoType || (exports.PickerVideoType = {}));
 
     const GalleryVideoPicker = core.registerPlugin('GalleryVideoPicker', {
-        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.GalleryVideoPickerPluginWeb()),
+        web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.GalleryVideoPickerPluginWeb()),
     });
 
     class GalleryVideoPickerPluginWeb extends core.WebPlugin {

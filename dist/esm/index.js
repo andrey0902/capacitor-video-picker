@@ -1,6 +1,7 @@
 import { registerPlugin } from '@capacitor/core';
-export * from './definitions';
-export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', {
-    web: () => import('./web').then(m => new m.GalleryVideoPickerPluginWeb()),
+const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', {
+    web: () => import('./web').then((m) => new m.GalleryVideoPickerPluginWeb()),
 });
+export * from './definitions';
+export { GalleryVideoPicker };
 //# sourceMappingURL=index.js.map
