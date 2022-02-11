@@ -33,3 +33,12 @@ export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVid
     return options;
   }
 }
+
+const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+
+export { GalleryVideoPicker };
+
+// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerWeb() })
+
+import { registerWebPlugin } from '@capacitor/core';
+registerWebPlugin(GalleryVideoPicker);
