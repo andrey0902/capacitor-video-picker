@@ -18,8 +18,10 @@ export class GalleryVideoPickerPluginWeb extends WebPlugin {
         return { error: 'Unsupported' };
     }
 }
-const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
-export { GalleryVideoPicker };
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(GalleryVideoPicker);
+// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+//
+// export { GalleryVideoPicker };
+//
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(GalleryVideoPicker);
 //# sourceMappingURL=web.js.map

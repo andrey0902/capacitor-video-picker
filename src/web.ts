@@ -3,13 +3,13 @@ import {
 } from '@capacitor/core';
 
 import type {
-  GalleryVideoPickerPlugin,
+  GalleryVideoPickerPluginPlugin,
   PickerVideoOptions,
   PickerVideoPermissions,
   PickerVideoResults,
 } from './definitions';
 
-export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVideoPickerPlugin {
+export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVideoPickerPluginPlugin {
   constructor() {
     super({
       name: 'GalleryVideoPicker',
@@ -32,9 +32,9 @@ export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVid
   }
 }
 
-const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
-
-export { GalleryVideoPicker };
-
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(GalleryVideoPicker);
+// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+//
+// export { GalleryVideoPicker };
+//
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(GalleryVideoPicker);

@@ -10,6 +10,10 @@ exports.PickerVideoType = void 0;
     PickerVideoType[PickerVideoType["GALLERY"] = 1] = "GALLERY";
 })(exports.PickerVideoType || (exports.PickerVideoType = {}));
 
+const GalleryVideoPickerPlugin = core.registerPlugin('GalleryVideoPickerPlugin', {
+    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.GalleryVideoPickerPluginWeb()),
+});
+
 class GalleryVideoPickerPluginWeb extends core.WebPlugin {
     constructor() {
         super({
@@ -29,9 +33,17 @@ class GalleryVideoPickerPluginWeb extends core.WebPlugin {
         return { error: 'Unsupported' };
     }
 }
-const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
-core.registerWebPlugin(GalleryVideoPicker);
+// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+//
+// export { GalleryVideoPicker };
+//
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(GalleryVideoPicker);
 
-exports.GalleryVideoPicker = GalleryVideoPicker;
-exports.GalleryVideoPickerPluginWeb = GalleryVideoPickerPluginWeb;
+var web = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb
+});
+
+exports.GalleryVideoPickerPlugin = GalleryVideoPickerPlugin;
 //# sourceMappingURL=plugin.cjs.js.map
