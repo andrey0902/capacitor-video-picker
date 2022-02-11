@@ -31,9 +31,9 @@ import static android.app.Activity.RESULT_OK;
         Manifest.permission.CAMERA
     },
     requestCodes = {
-        GalleryVideoPicker.PICK_FROM_GALLERY,
-        GalleryVideoPicker.REQUEST_TAKE_GALLERY_PERMISSION,
-        GalleryVideoPicker.REQUEST_TAKE_VIDEO_PERMISSION
+        GalleryVideoPickerPlugin.PICK_FROM_GALLERY,
+        GalleryVideoPickerPlugin.REQUEST_TAKE_GALLERY_PERMISSION,
+        GalleryVideoPickerPlugin.REQUEST_TAKE_VIDEO_PERMISSION
     }
 )
 public class GalleryVideoPickerPlugin extends Plugin {
