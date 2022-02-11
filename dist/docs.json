@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "GalleryVideoPickerPluginPlugin",
+    "slug": "galleryvideopickerpluginplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "GalleryVideoPicker",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "galleryvideopicker"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
