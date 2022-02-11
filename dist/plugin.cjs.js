@@ -37,10 +37,13 @@ class GalleryVideoPickerPluginWeb extends core.WebPlugin {
         return options;
     }
 }
+const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+core.registerWebPlugin(GalleryVideoPicker);
 
 var web = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb
+    GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb,
+    GalleryVideoPicker: GalleryVideoPicker
 });
 
 exports.GalleryVideoPickerPlugin = GalleryVideoPickerPlugin;
