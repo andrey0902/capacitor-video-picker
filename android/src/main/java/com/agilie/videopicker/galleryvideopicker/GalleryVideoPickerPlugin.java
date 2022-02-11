@@ -50,12 +50,12 @@ public class GalleryVideoPickerPlugin extends Plugin {
 
         if (reqCode == CAMERA_CODE) {
             saveCall(call);
-            permissionsRequest(Manifest.permission.CAMERA, GalleryVideoPicker.REQUEST_TAKE_VIDEO_PERMISSION, call);
+            permissionsRequest(Manifest.permission.CAMERA, GalleryVideoPickerPlugin.REQUEST_TAKE_VIDEO_PERMISSION, call);
         }
 
         if (reqCode == GALLERY_CODE) {
             saveCall(call);
-            permissionsRequest(Manifest.permission.READ_EXTERNAL_STORAGE, GalleryVideoPicker.REQUEST_TAKE_GALLERY_PERMISSION, call);
+            permissionsRequest(Manifest.permission.READ_EXTERNAL_STORAGE, GalleryVideoPickerPlugin.REQUEST_TAKE_GALLERY_PERMISSION, call);
         }
     }
 
@@ -72,14 +72,14 @@ public class GalleryVideoPickerPlugin extends Plugin {
             intent.putExtra("android.intent.extra.durationLimit", reqDuration);
             intent.putExtra("android.intent.extra.videoQuality", reqQuality);
             saveCall(call);
-            startActivityForResult(call, intent, GalleryVideoPicker.PICK_FROM_GALLERY);
+            startActivityForResult(call, intent, GalleryVideoPickerPlugin.PICK_FROM_GALLERY);
         }
 
         if (reqSource == GALLERY_CODE) {
             intent = new Intent(Intent.ACTION_PICK, MediaStore.Video.Media.EXTERNAL_CONTENT_URI);
             intent.putExtra(MediaStore.EXTRA_SIZE_LIMIT, reqSizeLimit);
             saveCall(call);
-            startActivityForResult(call, intent, GalleryVideoPicker.PICK_FROM_GALLERY);
+            startActivityForResult(call, intent, GalleryVideoPickerPlugin.PICK_FROM_GALLERY);
         }
     }
 
