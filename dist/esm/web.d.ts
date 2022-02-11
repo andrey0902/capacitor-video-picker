@@ -6,3 +6,5 @@ export declare class GalleryVideoPickerPluginWeb extends WebPlugin implements Ga
     getPermissions(options: PickerVideoPermissions): Promise<any>;
     openSettings(): Promise<any>;
 }
+declare const GalleryVideoPicker: GalleryVideoPickerPluginWeb;
+export { GalleryVideoPicker };

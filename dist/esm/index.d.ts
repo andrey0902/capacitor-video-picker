@@ -1,4 +1,2 @@
-import { GalleryVideoPickerPlugin } from './definitions';
-declare const GalleryVideoPicker: GalleryVideoPickerPlugin;
 export * from './definitions';
-export { GalleryVideoPicker };
+export * from './web';
