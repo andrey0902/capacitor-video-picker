@@ -4,6 +4,9 @@ export interface GalleryVideoPickerPluginPlugin {
     }): Promise<{
         value: string;
     }>;
+    getVideoFromGallery(options: PickerVideoOptions): Promise<PickerVideoResults>;
+    getPermissions(options: PickerVideoPermissions): Promise<any>;
+    openSettings(): Promise<any>;
 }
 export declare enum PickerVideoType {
     CAMERA = 0,
@@ -24,9 +27,4 @@ export interface PickerVideoResults {
 }
 export interface PickerVideoPermissions {
     readonly permissionType: PickerVideoType;
-}
-export interface GalleryVideoPickerPlugin {
-    getVideoFromGallery(options: PickerVideoOptions): Promise<PickerVideoResults>;
-    getPermissions(options: PickerVideoPermissions): Promise<any>;
-    openSettings(): Promise<any>;
 }

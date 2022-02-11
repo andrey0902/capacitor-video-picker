@@ -20,12 +20,178 @@
         "docs": "",
         "complexTypes": [],
         "slug": "galleryvideopicker"
+      },
+      {
+        "name": "getVideoFromGallery",
+        "signature": "(options: PickerVideoOptions) => Promise<PickerVideoResults>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "PickerVideoOptions"
+          }
+        ],
+        "returns": "Promise<PickerVideoResults>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PickerVideoResults",
+          "PickerVideoOptions"
+        ],
+        "slug": "getvideofromgallery"
+      },
+      {
+        "name": "getPermissions",
+        "signature": "(options: PickerVideoPermissions) => Promise<any>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "PickerVideoPermissions"
+          }
+        ],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PickerVideoPermissions"
+        ],
+        "slug": "getpermissions"
+      },
+      {
+        "name": "openSettings",
+        "signature": "() => Promise<any>",
+        "parameters": [],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "opensettings"
       }
     ],
     "properties": []
   },
-  "interfaces": [],
-  "enums": [],
+  "interfaces": [
+    {
+      "name": "PickerVideoResults",
+      "slug": "pickervideoresults",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "name",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "duration",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "path",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "PickerVideoOptions",
+      "slug": "pickervideooptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "sizeLimit",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "source",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PickerVideoType"
+          ],
+          "type": "PickerVideoType"
+        },
+        {
+          "name": "duration",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "quality",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    },
+    {
+      "name": "PickerVideoPermissions",
+      "slug": "pickervideopermissions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "permissionType",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PickerVideoType"
+          ],
+          "type": "PickerVideoType"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "PickerVideoType",
+      "slug": "pickervideotype",
+      "members": [
+        {
+          "name": "CAMERA",
+          "tags": [],
+          "docs": ""
+        },
+        {
+          "name": "GALLERY",
+          "tags": [],
+          "docs": ""
+        }
+      ]
+    }
+  ],
   "typeAliases": [],
   "pluginConfigs": []
 }
