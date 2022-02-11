@@ -1,8 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { GalleryVideoPickerPluginPlugin } from './definitions';
+import type { GalleryVideoPickerPlugin } from './definitions';
 
-const GalleryVideoPickerPlugin = registerPlugin<GalleryVideoPickerPluginPlugin>('GalleryVideoPickerPlugin', {
+const GalleryVideoPickerPlugin = registerPlugin<GalleryVideoPickerPlugin>('GalleryVideoPickerPlugin', {
   web: () => import('./web').then(m => new m.GalleryVideoPickerPluginWeb()),
 });
 

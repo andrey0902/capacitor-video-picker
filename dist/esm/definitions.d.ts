@@ -1,4 +1,4 @@
-export interface GalleryVideoPickerPluginPlugin {
+export interface GalleryVideoPickerPlugin {
     GalleryVideoPicker(options: {
         value: string;
     }): Promise<{

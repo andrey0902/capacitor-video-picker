@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
-import type { GalleryVideoPickerPluginPlugin, PickerVideoOptions, PickerVideoPermissions, PickerVideoResults } from './definitions';
-export declare class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVideoPickerPluginPlugin {
+import type { GalleryVideoPickerPlugin, PickerVideoOptions, PickerVideoPermissions, PickerVideoResults } from './definitions';
+export declare class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVideoPickerPlugin {
     constructor();
     getVideoFromGallery(options: PickerVideoOptions): Promise<PickerVideoResults>;
     getPermissions(options: PickerVideoPermissions): Promise<any>;

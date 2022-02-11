@@ -5,8 +5,8 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(GalleryVideoPickerPluginPlugin)
-public class GalleryVideoPickerPluginPlugin: CAPPlugin {
+@objc(GalleryVideoPickerPlugin)
+public class GalleryVideoPickerPlugin: CAPPlugin {
     private let implementation = GalleryVideoPickerPlugin()
 
     @objc func echo(_ call: CAPPluginCall) {

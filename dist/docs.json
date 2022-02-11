@@ -1,7 +1,7 @@
 {
   "api": {
-    "name": "GalleryVideoPickerPluginPlugin",
-    "slug": "galleryvideopickerpluginplugin",
+    "name": "GalleryVideoPickerPlugin",
+    "slug": "galleryvideopickerplugin",
     "docs": "",
     "tags": [],
     "methods": [

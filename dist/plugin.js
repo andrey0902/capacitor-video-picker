@@ -7,7 +7,7 @@ var capacitorGalleryVideoPickerPlugin = (function (exports, core) {
         PickerVideoType[PickerVideoType["GALLERY"] = 1] = "GALLERY";
     })(exports.PickerVideoType || (exports.PickerVideoType = {}));
 
-    const GalleryVideoPickerPlugin = core.registerPlugin('GalleryVideoPickerPlugin', {
+    core.registerPlugin('GalleryVideoPickerPlugin', {
         web: () => Promise.resolve().then(function () { return web; }).then(m => new m.GalleryVideoPickerPluginWeb()),
     });
 
@@ -42,8 +42,6 @@ var capacitorGalleryVideoPickerPlugin = (function (exports, core) {
         GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb,
         GalleryVideoPicker: GalleryVideoPicker
     });
-
-    exports.GalleryVideoPickerPlugin = GalleryVideoPickerPlugin;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

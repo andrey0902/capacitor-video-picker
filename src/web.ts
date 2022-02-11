@@ -1,13 +1,13 @@
 import { WebPlugin } from '@capacitor/core';
 
 import type {
-  GalleryVideoPickerPluginPlugin,
+  GalleryVideoPickerPlugin,
   PickerVideoOptions,
   PickerVideoPermissions,
   PickerVideoResults,
 } from './definitions';
 
-export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVideoPickerPluginPlugin {
+export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVideoPickerPlugin {
   constructor() {
     super({
       name: 'GalleryVideoPicker',
