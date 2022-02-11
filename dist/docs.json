@@ -6,22 +6,6 @@
     "tags": [],
     "methods": [
       {
-        "name": "GalleryVideoPicker",
-        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "{ value: string; }"
-          }
-        ],
-        "returns": "Promise<{ value: string; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "galleryvideopicker"
-      },
-      {
         "name": "getVideoFromGallery",
         "signature": "(options: PickerVideoOptions) => Promise<PickerVideoResults>",
         "parameters": [

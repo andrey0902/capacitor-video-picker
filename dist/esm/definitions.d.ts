@@ -1,9 +1,4 @@
 export interface GalleryVideoPickerPlugin {
-    GalleryVideoPicker(options: {
-        value: string;
-    }): Promise<{
-        value: string;
-    }>;
     getVideoFromGallery(options: PickerVideoOptions): Promise<PickerVideoResults>;
     getPermissions(options: PickerVideoPermissions): Promise<any>;
     openSettings(): Promise<any>;

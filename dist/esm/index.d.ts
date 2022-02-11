@@ -1,2 +1,3 @@
 export * from './definitions';
-export * from './web';
+import { GalleryVideoPickerPlugin } from './definitions';
+export declare const GalleryVideoPicker: GalleryVideoPickerPlugin;

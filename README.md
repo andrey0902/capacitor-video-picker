@@ -13,7 +13,6 @@ npx cap sync
 
 <docgen-index>
 
-* [`GalleryVideoPicker(...)`](#galleryvideopicker)
 * [`getVideoFromGallery(...)`](#getvideofromgallery)
 * [`getPermissions(...)`](#getpermissions)
 * [`openSettings()`](#opensettings)
@@ -24,21 +23,6 @@ npx cap sync
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
-
-### GalleryVideoPicker(...)
-
-```typescript
-GalleryVideoPicker(options: { value: string; }) => Promise<{ value: string; }>
-```
-
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
-
---------------------
-
 
 ### getVideoFromGallery(...)
 
