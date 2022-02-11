@@ -37,12 +37,14 @@ class GalleryVideoPickerPluginWeb extends core.WebPlugin {
         return options;
     }
 }
-const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
-core.registerWebPlugin(GalleryVideoPicker);
+// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+// export { GalleryVideoPicker };
+// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerPluginWeb() })
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(GalleryVideoPicker);
 
 var web = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb,
-    GalleryVideoPicker: GalleryVideoPicker
+    GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb
 });
 //# sourceMappingURL=plugin.cjs.js.map

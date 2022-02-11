@@ -1,4 +1,4 @@
-import { WebPlugin } from '@capacitor/core';
+import { WebPlugin, } from '@capacitor/core';
 export class GalleryVideoPickerPluginWeb extends WebPlugin {
     constructor() {
         super({
@@ -22,9 +22,9 @@ export class GalleryVideoPickerPluginWeb extends WebPlugin {
         return options;
     }
 }
-const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
-export { GalleryVideoPicker };
-// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerWeb() })
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(GalleryVideoPicker);
+// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+// export { GalleryVideoPicker };
+// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerPluginWeb() })
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(GalleryVideoPicker);
 //# sourceMappingURL=web.js.map

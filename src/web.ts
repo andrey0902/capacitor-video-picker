@@ -1,4 +1,6 @@
-import { WebPlugin } from '@capacitor/core';
+import {
+  WebPlugin,
+} from '@capacitor/core';
 
 import type {
   GalleryVideoPickerPlugin,
@@ -28,17 +30,18 @@ export class GalleryVideoPickerPluginWeb extends WebPlugin implements GalleryVid
   async openSettings(): Promise<any> {
     return { error: 'Unsupported' };
   }
+
   async GalleryVideoPicker(options: { value: string }): Promise<{ value: string }> {
     console.log('ECHO', options);
     return options;
   }
 }
 
-const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
 
-export { GalleryVideoPicker };
+// export { GalleryVideoPicker };
 
-// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerWeb() })
+// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerPluginWeb() })
 
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(GalleryVideoPicker);
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(GalleryVideoPicker);
