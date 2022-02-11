@@ -36,7 +36,5 @@ const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
 
 export { GalleryVideoPicker };
 
-// export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerPluginWeb() })
-
 import { registerWebPlugin } from '@capacitor/core';
 registerWebPlugin(GalleryVideoPicker);
