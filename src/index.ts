@@ -1,6 +1,6 @@
-import { registerPlugin } from '@capacitor/core';
+// import { registerPlugin } from '@capacitor/core';
 export * from './definitions';
-
-export default registerPlugin<any>('GalleryVideoPicker', {
-  web: () => import('./web').then(m => new m.GalleryVideoPickerPluginWeb()),
-});
+export * from './web';
+// export default registerPlugin<any>('GalleryVideoPicker', {
+//   web: () => import('./web').then(m => new m.GalleryVideoPickerPluginWeb()),
+// });

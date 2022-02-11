@@ -22,9 +22,10 @@ export class GalleryVideoPickerPluginWeb extends WebPlugin {
         return options;
     }
 }
-// const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
-// export { GalleryVideoPicker };
+const GalleryVideoPicker = new GalleryVideoPickerPluginWeb();
+//
+export { GalleryVideoPicker };
 // export const GalleryVideoPicker = registerPlugin('GalleryVideoPicker', { web: () => new GalleryVideoPickerPluginWeb() })
-// import { registerWebPlugin } from '@capacitor/core';
-// registerWebPlugin(GalleryVideoPicker);
+import { registerWebPlugin } from '@capacitor/core';
+registerWebPlugin(GalleryVideoPicker);
 //# sourceMappingURL=web.js.map

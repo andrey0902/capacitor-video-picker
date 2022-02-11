@@ -11,3 +11,5 @@ export declare class GalleryVideoPickerPluginWeb extends WebPlugin implements Ga
         value: string;
     }>;
 }
+declare const GalleryVideoPicker: GalleryVideoPickerPluginWeb;
+export { GalleryVideoPicker };
