@@ -1,3 +1,3 @@
 export * from './definitions';
-import type { GalleryVideoPickerPlugin } from './definitions';
-export declare const GalleryVideoPicker: GalleryVideoPickerPlugin;
+declare const _default: any;
+export default _default;

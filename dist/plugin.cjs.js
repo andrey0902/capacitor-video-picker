@@ -10,7 +10,7 @@ exports.PickerVideoType = void 0;
     PickerVideoType[PickerVideoType["GALLERY"] = 1] = "GALLERY";
 })(exports.PickerVideoType || (exports.PickerVideoType = {}));
 
-const GalleryVideoPicker = core.registerPlugin('GalleryVideoPicker', {
+var index = core.registerPlugin('GalleryVideoPicker', {
     web: () => Promise.resolve().then(function () { return web; }).then(m => new m.GalleryVideoPickerPluginWeb()),
 });
 
@@ -48,5 +48,5 @@ var web = /*#__PURE__*/Object.freeze({
     GalleryVideoPickerPluginWeb: GalleryVideoPickerPluginWeb
 });
 
-exports.GalleryVideoPicker = GalleryVideoPicker;
+exports["default"] = index;
 //# sourceMappingURL=plugin.cjs.js.map
